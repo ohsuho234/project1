@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 신청 서비스</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 상단 헤더 – 기존 포털 그대로 */
+    header {
+      background: #005eb8;
+      color: #fff;
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .logo-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .logo-text-main {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    nav li {
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    nav li.active,
+    nav li:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    .header-right {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-btn {
+      border-radius: 999px;
+      border: 1px solid #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      background: transparent;
+      color: #fff;
+    }
+
+    /* 공통 레이아웃 */
+    .container {
+      max-width: 1180px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+
+    .page-header {
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* 신청 서비스 그리드 */
+    .apply-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .apply-card {
+      font-size: 12px;
+    }
+
+    .apply-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .apply-card h2 span.icon {
+      font-size: 16px;
+    }
+
+    .apply-group {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .apply-group:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 4px;
+    }
+
+    .apply-group-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #005eb8;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .apply-group-title::before {
+      content: "▾";
+      font-size: 10px;
+      color: #777;
+    }
+
+    .apply-list {
+      list-style: none;
+      padding-left: 10px;
+      margin-left: 2px;
+      border-left: 1px solid #e0e4ee;
+    }
+
+    .apply-list li {
+      padding: 3px 0;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .apply-list li:hover {
+      color: #005eb8;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 16px 0 24px;
+    }
+
+    @media (max-width: 900px) {
+      .apply-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        row-gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 헤더 -->
+  <header>
+    <div class="logo-area" onclick="location.href='hyin.html'">
+      <div class="logo-circle">HY</div>
+      <div>
+        <div class="logo-text-main">한양대학교 포털</div>
+        <div class="logo-text-sub">Hanyang University Smart Campus</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li onclick="location.href='hyin.html'">HOME</li>
+        <li onclick="location.href='job.html'">취업·진로</li>
+        <li class="active">신청</li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <span>2025-12-05(금)</span>
+      <button class="login-btn">지능정보양자공학 장선재님</button>
+    </div>
+  </header>
+
+  <!-- 메인 -->
+  <main class="container">
+    <section class="page-header">
+      <div class="page-title">신청 서비스</div>
+      <div class="page-desc">
+        상담, 생활관, 학적변동, 국제교류, 소프트웨어 신청까지 자주 사용하는 신청 기능을 한 화면에서 확인할 수 있습니다.
+      </div>
+    </section>
+
+    <!-- 신청 카테고리 그리드 -->
+    <section class="apply-grid">
+
+      <!-- 1. 상담 · 학생지원 -->
+      <article class="card apply-card">
+        <h2><span class="icon">💬</span>상담 · 학생지원</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">심리상담</div>
+          <ul class="apply-list">
+            <li>메인페이지</li>
+            <li>개인상담/심리검사 신청</li>
+            <li>상담프로그램 신청/조회</li>
+            <li>정신건강 자가진단</li>
+            <li>My Page</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">학생봉급</div>
+          <ul class="apply-list">
+            <li>학생봉급금 신청</li>
+            <li>국제학생봉급금 신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">상담 (지도교수/취업)</div>
+          <ul class="apply-list">
+            <li>지도교수 상담 신청</li>
+            <li>취업 상담 신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">논문</div>
+          <ul class="apply-list">
+            <li>학부논문입력</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2. 생활관 · 시설/공간 -->
+      <article class="card apply-card">
+        <h2><span class="icon">🏠</span>생활관 · 시설</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">생활관</div>
+          <ul class="apply-list">
+            <li>생활관입사일정안내</li>
+            <li>생활관입사신청</li>
+            <li>생활관입사신청조회</li>
+            <li>생활관합격자조회</li>
+            <li>생활관비분할결제관리</li>
+            <li>생활관비납부확인</li>
+            <li>방학휴무입사 생활관리</li>
+            <li>호실배정정보</li>
+            <li>생활관입사포기/취소</li>
+            <li>입사서약확인</li>
+            <li>벌점조회</li>
+            <li>입사포기신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">퇴사/호실 이동</div>
+          <ul class="apply-list">
+            <li>퇴사신청</li>
+            <li>호실이동/추가 확인</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">시설/공간</div>
+          <ul class="apply-list">
+            <li>출입권한신청</li>
+            <li>주차관리시스템(ERICA)</li>
+            <li>시설물대관신청</li>
+            <li>시설물대관현황조회</li>
+            <li>장소대관순번제(ERICA)</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3. 학적변동 · 성적 · 전공 -->
+      <article class="card apply-card">
+        <h2><span class="icon">📚</span>학적 · 성적 · 전공</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">학적변동</div>
+          <ul class="apply-list">
+            <li>휴학신청</li>
+            <li>전과신청</li>
+            <li>재입신청</li>
+            <li>자퇴신청</li>
+            <li>자진유급신청</li>
+            <li>조기졸업신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">성적 관련</div>
+          <ul class="apply-list">
+            <li>파견대학 학점인정신청</li>
+            <li>특강/시험성적 입력 및 조회</li>
+            <li>S/U 성적기안신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">전공관리</div>
+          <ul class="apply-list">
+            <li>주전공배정신청</li>
+            <li>전공신청/포기</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4. 마이크로전공 · 학점교류 · 교환유학 -->
+      <article class="card apply-card">
+        <h2><span class="icon">🌍</span>전공트랙 · 학점교류</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">마이크로전공/트랙</div>
+          <ul class="apply-list">
+            <li>트랙 검색</li>
+            <li>트랙신청/내역확인</li>
+            <li>트랙취소/내역확인</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">학점교류관리</div>
+          <ul class="apply-list">
+            <li>인턴신청</li>
+            <li>자비유학신청</li>
+            <li>어학연수신청</li>
+            <li>교환학점 승인신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">교환유학</div>
+          <ul class="apply-list">
+            <li>교환유학신청</li>
+            <li>교환유학신청내역</li>
+            <li>교환유학귀국보고서 조회</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 5. 등록 · 장학 -->
+      <article class="card apply-card">
+        <h2><span class="icon">💰</span>등록 · 장학</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">등록장학</div>
+          <ul class="apply-list">
+            <li>등록금분납신청</li>
+            <li>본인계좌변경</li>
+            <li>기타교내장학신청</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">교직</div>
+          <ul class="apply-list">
+            <li>자격검정안내</li>
+            <li>교직이수신청(비사범)</li>
+            <li>다전공교직신청</li>
+            <li>교육실습신청(개별학교)</li>
+            <li>무시험검정신청</li>
+            <li>실패조교신청</li>
+            <li>인접과목신청</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 6. IT · 소프트웨어 · 봉사 · 기타 -->
+      <article class="card apply-card">
+        <h2><span class="icon">🛠️</span>IT · 봉사 · 기타</h2>
+
+        <div class="apply-group">
+          <div class="apply-group-title">정보인프라</div>
+          <ul class="apply-list">
+            <li>VPN 신청관리</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">소프트웨어</div>
+          <ul class="apply-list">
+            <li>Microsoft 365 (Office) 서비스 신청</li>
+            <li>Microsoft 365 (Office) 표시이름 변경</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">자원봉사</div>
+          <ul class="apply-list">
+            <li>자원봉사안내</li>
+            <li>자원봉사입력</li>
+            <li>단체봉사신청</li>
+            <li>개인봉사내역</li>
+          </ul>
+        </div>
+
+        <div class="apply-group">
+          <div class="apply-group-title">잉글리시클리닉 · 출석</div>
+          <ul class="apply-list">
+            <li>잉글리시클리닉 신청</li>
+            <li>공결신청</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
+  </footer>
+</body>
+</html>

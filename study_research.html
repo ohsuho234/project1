@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 학습·연구지원 서비스</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 상단 헤더 – 기존 포털 스타일 유지 */
+    header {
+      background: #005eb8;
+      color: #fff;
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .logo-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .logo-text-main {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    nav li {
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    nav li.active,
+    nav li:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    .header-right {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-btn {
+      border-radius: 999px;
+      border: 1px solid #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      background: transparent;
+      color: #fff;
+    }
+
+    /* 공통 레이아웃 */
+    .container {
+      max-width: 1180px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+
+    .page-header {
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* 메인 그리드: 수업 / 연구 / 교수학습 */
+    .study-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .study-card {
+      font-size: 12px;
+    }
+
+    .study-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .study-card h2 span.icon {
+      font-size: 16px;
+    }
+
+    .study-group {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .study-group:first-of-type {
+      margin-top: 4px;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .study-group-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #005eb8;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .study-group-title::before {
+      content: "▾";
+      font-size: 10px;
+      color: #777;
+    }
+
+    .study-list {
+      list-style: none;
+      padding-left: 10px;
+      margin-left: 2px;
+      border-left: 1px solid #e0e4ee;
+    }
+
+    .study-list li {
+      padding: 3px 0;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .study-list li:hover {
+      color: #005eb8;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 16px 0 24px;
+    }
+
+    @media (max-width: 900px) {
+      .study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        row-gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 헤더 -->
+  <header>
+    <div class="logo-area" onclick="location.href='hyin.html'">
+      <div class="logo-circle">HY</div>
+      <div>
+        <div class="logo-text-main">한양대학교 포털</div>
+        <div class="logo-text-sub">Hanyang University Smart Campus</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li onclick="location.href='hyin.html'">HOME</li>
+        <li onclick="location.href='job.html'">취업·진로</li>
+        <li class="active">학습·연구</li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <span>2025-12-05(금)</span>
+      <button class="login-btn">지능정보양자공학 장선재님</button>
+    </div>
+  </header>
+
+  <!-- 메인 -->
+  <main class="container">
+    <section class="page-header">
+      <div class="page-title">학습·연구지원 서비스</div>
+      <div class="page-desc">
+        교육과정 조회, 연구 과제 관리부터 튜터링·학습진단까지 학습과 연구를 돕는 서비스를 한 화면에서 제공합니다.
+      </div>
+    </section>
+
+    <section class="study-grid">
+      <!-- 1. 수업/강의 지원 -->
+      <article class="card study-card">
+        <h2><span class="icon">📘</span>수업 · 강의지원</h2>
+
+        <div class="study-group">
+          <div class="study-group-title">교육과정 조회</div>
+          <ul class="study-list">
+            <li>교육과정조회</li>
+            <li>교과목조회</li>
+            <li>교육과정포트폴리오</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">출결/수업운영</div>
+          <ul class="study-list">
+            <li>출석부조회</li>
+            <li>수업참여방식(원격/대면) 선택</li>
+            <li>수업도우미신청</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">확인서 · 강의평가</div>
+          <ul class="study-list">
+            <li>교과목개요 확인서</li>
+            <li>강의평가결과검색</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">설문 · 전자출결</div>
+          <ul class="study-list">
+            <li>계절학기수요조사</li>
+            <li>전자출결</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">봉사/수강신청</div>
+          <ul class="study-list">
+            <li>사회봉사(학점과정)</li>
+            <li>사회봉사성적조회</li>
+            <li>사회봉사수강내역</li>
+            <li>수업참여 봉사계획 신청</li>
+            <li>수강신청내역조회</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2. 연구지원 -->
+      <article class="card study-card">
+        <h2><span class="icon">🔬</span>연구지원</h2>
+
+        <div class="study-group">
+          <div class="study-group-title">연구과제</div>
+          <ul class="study-list">
+            <li>연구인력</li>
+            <li>연구인력인건비계좌 관리</li>
+            <li>연구자번호 및 서명 관리</li>
+            <li>연구원임용 · 임용지원현황</li>
+            <li>연구과제 참여연관계상세조회</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">연구수행 · 연구비</div>
+          <ul class="study-list">
+            <li>연구비 지급내역조회</li>
+            <li>학생인건비 통합관리</li>
+            <li>학생연구자장학등록</li>
+            <li>연구참여확약서 및 동의서 관리</li>
+            <li>학생인건비지급내역 조회</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">지식재산권 · 시스템</div>
+          <ul class="study-list">
+            <li>발명신고</li>
+            <li>특허실적 등록</li>
+            <li>시스템관리</li>
+            <li>대리인등록신청</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">산학협력 · 공동장비</div>
+          <ul class="study-list">
+            <li>맞춤형케어클래스</li>
+            <li>맞춤장학</li>
+            <li>연구장비예약</li>
+            <li>시험분석신청</li>
+            <li>나의 예약현황 확인</li>
+            <li>사용자 등록</li> 
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3. 교수학습지원 -->
+      <article class="card study-card">
+        <h2><span class="icon">🎓</span>교수학습지원</h2>
+
+        <div class="study-group">
+          <div class="study-group-title">학습진단 · 상담</div>
+          <ul class="study-list">
+            <li>학습전략검사(3유형)</li>
+            <li>학습스타일 검사</li>
+            <li>학습스타일 결과조회</li>
+            <li>학생상담 신청</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">튜터링 · 팀활동</div>
+          <ul class="study-list">
+            <li>한양또래튜터링 공지사항</li>
+            <li>튜터신청 · 튜티신청</li>
+            <li>팀구성/활동계획서 작성</li>
+            <li>활동관리 · 결과보고서 제출</li>
+            <li>학습활동 게시판</li>
+          </ul>
+        </div>
+
+        <div class="study-group">
+          <div class="study-group-title">행사 · 그룹스터디</div>
+          <ul class="study-list">
+            <li>행사정보 및 신청</li>
+            <li>그룹스터디 신청</li>
+            <li>한양옴진데이 참여 신청</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 증명·인증 서비스</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 상단 헤더 – 기존 스타일 */
+    header {
+      background: #005eb8;
+      color: #fff;
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .logo-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .logo-text-main {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    nav li {
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    nav li.active,
+    nav li:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    .header-right {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-btn {
+      border-radius: 999px;
+      border: 1px solid #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      background: transparent;
+      color: #fff;
+    }
+
+    /* 공통 레이아웃 */
+    .container {
+      max-width: 1180px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+
+    .page-header {
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* 메인 그리드 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .section-card {
+      font-size: 12px;
+    }
+
+    .section-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-card h2 span.icon {
+      font-size: 16px;
+    }
+
+    .group {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .group:first-of-type {
+      margin-top: 4px;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .group-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #005eb8;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .group-title::before {
+      content: "▾";
+      font-size: 10px;
+      color: #777;
+    }
+
+    .item-list {
+      list-style: none;
+      padding-left: 10px;
+      margin-left: 2px;
+      border-left: 1px solid #e0e4ee;
+    }
+
+    .item-list li {
+      padding: 3px 0;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .item-list li:hover {
+      color: #005eb8;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 16px 0 24px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        row-gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 헤더 -->
+  <header>
+    <div class="logo-area" onclick="location.href='hyin.html'">
+      <div class="logo-circle">HY</div>
+      <div>
+        <div class="logo-text-main">한양대학교 포털</div>
+        <div class="logo-text-sub">Hanyang University Smart Campus</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li onclick="location.href='hyin.html'">HOME</li>
+        <li onclick="location.href='job.html'">취업·진로</li>
+        <li class="active">증명·인증</li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <span>2025-12-05(금)</span>
+      <button class="login-btn">지능정보양자공학 장선재님</button>
+    </div>
+  </header>
+
+  <!-- 메인 -->
+  <main class="container">
+    <section class="page-header">
+      <div class="page-title">증명·인증 서비스</div>
+      <div class="page-desc">
+        재학·성적 등 각종 증명서 발급부터 HONOR·학연산클러스터 교육인증까지 한 화면에서 확인할 수 있습니다.
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- 왼쪽: 증명발급 -->
+      <article class="card section-card">
+        <h2><span class="icon">📄</span>증명발급</h2>
+
+        <div class="group">
+          <div class="group-title">증명서 발급</div>
+          <ul class="item-list">
+            <li>증명발급안내</li>
+            <li>인터넷증명발급(유료)</li>
+            <li>포털증명발급(무료)</li>
+            <li>우편증명발급신청</li>
+            <li>우편증명신청내역</li>
+            <li>발급내역조회</li>
+            <li>진위여부확인</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <div class="group-title">급여 관련 증명</div>
+          <ul class="item-list">
+            <li>기타소득영수증</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 오른쪽: 교육인증 -->
+      <article class="card section-card">
+        <h2><span class="icon">✅</span>교육인증</h2>
+
+        <div class="group">
+          <div class="group-title">HONOR인증</div>
+          <ul class="item-list">
+            <li>지원신청</li>
+            <li>현황조회</li>
+            <li>기획력/특강</li>
+            <li>활동신청</li>
+          </ul>
+        </div>
+
+        <div class="group">
+          <div class="group-title">학연산클러스터인증</div>
+          <ul class="item-list">
+            <li>지원신청</li>
+            <li>현황조회</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
+  </footer>
+</body>
+</html>
