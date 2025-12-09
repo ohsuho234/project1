@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 포털 리디자인</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #005eb8;
+      color: #fff;
+      padding: 16px 32px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    .placeholder {
+      padding: 40px 24px;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+
+    .placeholder h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .placeholder p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 24px 0 32px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 상단 헤더 (가장 기본 버전) -->
+  <header>
+    <h1>한양대학교 포털</h1>
+    <p>Hanyang University Smart Campus (Prototype v1)</p>
+  </header>
+
+  <!-- 메인 컨테이너: 아직 구체 섹션 없음 -->
+  <main>
+    <section class="placeholder">
+      <h2>포털 리디자인 프로토타입 v1</h2>
+      <p>
+        이 버전은 한양대학교 포털 리디자인을 위한<br />
+        가장 초기 HTML 골격만 포함하고 있습니다.<br /><br />
+        이후 버전에서 상단 메뉴, 홈 화면 카드 레이아웃, 식단표, 학사일정,
+        취업정보, 등록·장학, 신청/증명 등의 기능이 단계적으로 추가될 예정입니다.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hanyang University ERICA · Prototype v1
+  </footer>
+</body>
+</html>
