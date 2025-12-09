@@ -12,7 +12,15 @@
 
     /* PART 2: header, .logo-area, .logo-circle, .logo-text-* 등의 스타일 */
     /* TODO: header 관련 CSS 붙이기 */
-
+    header {
+      background: #005eb8;
+      color: #fff;
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
     /* PART 3: .container, .grid, .grid-2, .grid-3, .card, .badge 등의 레이아웃/카드 공통 스타일 */
 
     /* PART 4: .hero 관련 스타일 (메인 배너) */
