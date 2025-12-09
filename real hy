@@ -94,7 +94,54 @@
     }
 
     /* PART 6: 식단표 관련 스타일 (.meal-*) */
+ .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
+      background: linear-gradient(135deg, #005eb8, #1289ff);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
 
+    .hero-top { z-index: 2; }
+
+    .hero-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    .hero-bottom {
+      margin-top: 16px;
+      font-size: 12px;
+      opacity: 0.95;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.18);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .hero-circle {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      right: -60px;
+      bottom: -60px;
+    }
     /* PART 7: 학사일정, 열람실 좌석, 전화번호, quick-links, footer 스타일 */
 
     /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
