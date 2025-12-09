@@ -9,7 +9,22 @@
     /* PART 1: 기본 reset & 폰트, body, a 태그 등 공통 스타일 */
     /* TODO: 여기부터 원래 코드의
        * { ... } / body { ... } / a { ... } 부분을 붙여넣기 */
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
     /* PART 2: header, .logo-area, .logo-circle, .logo-text-* 등의 스타일 */
     /* TODO: header 관련 CSS 붙이기 */
     header {
