@@ -101,11 +101,147 @@
       color: #fff;
     }
     /* PART 5: .service-grid, .service-item 관련 스타일 */
+.container {
+      max-width: 1180px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-2 {
+      grid-template-columns: 2fr 1.5fr;
+    }
+
+    .grid-3 {
+      grid-template-columns: 1.4fr 1.4fr 1.2fr;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      background: #e5f1ff;
+      color: #005eb8;
+      margin-left: 6px;
+    }
+
+    .badge-inactive {
+      background: #f0f4fa;
+      color: #7a8a99;
+    }
 
     /* PART 6: 식단표 관련 스타일 (.meal-*) */
+ .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
+      background: linear-gradient(135deg, #005eb8, #1289ff);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
 
+    .hero-top { z-index: 2; }
+
+    .hero-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    .hero-bottom {
+      margin-top: 16px;
+      font-size: 12px;
+      opacity: 0.95;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.18);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .hero-circle {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      right: -60px;
+      bottom: -60px;
+    }
     /* PART 7: 학사일정, 열람실 좌석, 전화번호, quick-links, footer 스타일 */
+.service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 8px;
+    }
 
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 4px;
+      border-radius: 12px;
+      transition: background 0.15s, transform 0.15s;
+      cursor: pointer;
+    }
+
+    .service-item span.icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7f1ff;
+      font-size: 16px;
+    }
+
+    .service-item p {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .service-item:hover {
+      background: #f3f7ff;
+      transform: translateY(-1px);
+    }
     /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
 
     /* PART 9: 취업·진로(job-*) 관련 스타일 */
