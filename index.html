@@ -1,0 +1,193 @@
+버전4
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HYIN 포털 Prototype v4</title>
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Noto Sans KR"; }
+
+    body { background: #f5f7fb; }
+
+    /* 상단 헤더 */
+    header {
+        background: #005eb8;
+        color: #fff;
+        padding: 14px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 18px;
+        font-size: 15px;
+    }
+
+    nav li {
+        padding: 6px 12px;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    nav li.active,
+    nav li:hover {
+        background: rgba(255,255,255,0.25);
+    }
+
+    /* 메인 컨테이너 */
+    .container {
+        max-width: 1180px;
+        margin: 20px auto;
+        padding: 0 16px;
+    }
+
+    section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    section.active {
+        display: block;
+        opacity: 1;
+    }
+
+    h2 { margin-bottom: 12px; }
+
+    /* 카드 UI */
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 2px 6px rgba(15,23,42,0.08);
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        padding: 16px;
+        color: #777;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<header>
+    <div class="logo">HYIN 포털</div>
+
+    <nav>
+        <ul>
+            <li class="menu active" data-target="home">홈</li>
+            <li class="menu" data-target="academics">학사</li>
+            <li class="menu" data-target="career">취업</li>
+            <li class="menu" data-target="student">학생생활</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 메인 -->
+<main class="container">
+
+    <!-- Home 화면 -->
+    <section id="home" class="active">
+        <div class="card">
+            <h2>홈 화면</h2>
+            <p>여기는 HYIN 포털의 메인 화면입니다.</p><br>
+            <p>버전4에서는 클릭 시 전환되는 애니메이션, 메뉴 활성화 효과 등이 구현되어 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- 학사 -->
+    <section id="academics">
+        <div class="card">
+            <h2>학사 서비스</h2>
+            <p>수강신청, 성적조회, 학사일정 등의 기능을 이 페이지에 추가할 예정입니다.</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 예시 학사 일정</h3>
+            <p>- 12/10 ~ 12/14 기말고사</p>
+            <p>- 12/20 성적공고</p>
+        </div>
+    </section>
+
+    <!-- 취업 -->
+    <section id="career">
+        <div class="card">
+            <h2>취업 · 진로</h2>
+            <p>채용공고, 취업지원 프로그램, 자격증 정보 등이 제공될 예정입니다.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 예시 채용공고</h3>
+            <p>- 삼성전자 SW직군 공개채용</p>
+            <p>- 현대오토에버 신입 채용</p>
+        </div>
+    </section>
+
+    <!-- 학생생활 -->
+    <section id="student">
+        <div class="card">
+            <h2>학생생활</h2>
+            <p>동아리, 학생 편의시설, 기숙사, 학생회 관련 정보가 들어갈 공간입니다.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏫 캠퍼스 생활 안내</h3>
+            <p>- 학생식당 운영시간: 11:00~19:00</p>
+            <p>- 열람실 좌석 현황은 별도 시스템에서 제공됩니다.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 HYIN Portal Prototype v4
+</footer>
+
+<script>
+    const menus = document.querySelectorAll(".menu");
+    const sections = document.querySelectorAll("section");
+
+    menus.forEach(menu => {
+        menu.addEventListener("click", () => {
+
+            // 메뉴 활성화 표시
+            menus.forEach(m => m.classList.remove("active"));
+            menu.classList.add("active");
+
+            // 화면 전환
+            const target = menu.getAttribute("data-target");
+
+            sections.forEach(sec => {
+                if(sec.id === target){
+                    sec.classList.add("active");
+                } else {
+                    sec.classList.remove("active");
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
