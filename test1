@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>한양대학교 포털 리디자인</title>
+  <title>한양대학교 포털 리디자인 - v2</title>
   <style>
     * {
       box-sizing: border-box;
@@ -16,23 +16,51 @@
       color: #222;
     }
 
+    /* 헤더 */
     header {
       background: #005eb8;
       color: #fff;
       padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    header h1 {
+    .logo-area {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-area h1 {
       font-size: 20px;
       font-weight: 700;
     }
 
-    header p {
+    .logo-area p {
       font-size: 12px;
-      opacity: 0.9;
-      margin-top: 4px;
+      opacity: 0.85;
     }
 
+    /* 네비게이션 */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    nav li {
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    nav li:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* 메인 영역 */
     main {
       max-width: 1100px;
       margin: 40px auto;
@@ -67,27 +95,40 @@
   </style>
 </head>
 <body>
-  <!-- 상단 헤더 (가장 기본 버전) -->
+  <!-- 헤더 -->
   <header>
-    <h1>한양대학교 포털</h1>
-    <p>Hanyang University Smart Campus (Prototype v1)</p>
+    <div class="logo-area">
+      <h1>한양대학교 포털</h1>
+      <p>Hanyang University Smart Campus — Prototype v2</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>취업·진로</li>
+        <li>학습·연구</li>
+        <li>등록·장학</li>
+        <li>신청</li>
+        <li>증명·인증</li>
+        <li>참여·기부</li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- 메인 컨테이너: 아직 구체 섹션 없음 -->
+  <!-- 메인 -->
   <main>
     <section class="placeholder">
-      <h2>포털 리디자인 프로토타입 v1</h2>
+      <h2>리디자인 프로토타입 v2</h2>
       <p>
-        이 버전은 한양대학교 포털 리디자인을 위한<br />
-        가장 초기 HTML 골격만 포함하고 있습니다.<br /><br />
-        이후 버전에서 상단 메뉴, 홈 화면 카드 레이아웃, 식단표, 학사일정,
-        취업정보, 등록·장학, 신청/증명 등의 기능이 단계적으로 추가될 예정입니다.
+        이 버전에서는 헤더 및 네비게이션 메뉴가 추가되었습니다.<br />
+        아직 기능 연결이나 섹션 분리는 진행되지 않았으며,<br />
+        다음 버전에서 메뉴별 화면 구성과 SPA 구조가 구현됩니다.
       </p>
     </section>
   </main>
 
   <footer>
-    © 2025 Hanyang University ERICA · Prototype v1
+    © 2025 Hanyang University ERICA · Prototype v2
   </footer>
 </body>
 </html>
