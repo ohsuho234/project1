@@ -36,9 +36,70 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     /* PART 3: .container, .grid, .grid-2, .grid-3, .card, .badge 등의 레이아웃/카드 공통 스타일 */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
 
+    .logo-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .logo-text-main {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      opacity: 0.85;
+    }
     /* PART 4: .hero 관련 스타일 (메인 배너) */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
 
+    nav li {
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    nav li.active,
+    nav li:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    .header-right {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-btn {
+      border-radius: 999px;
+      border: 1px solid #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      background: transparent;
+      color: #fff;
+    }
     /* PART 5: .service-grid, .service-item 관련 스타일 */
 
     /* PART 6: 식단표 관련 스타일 (.meal-*) */
