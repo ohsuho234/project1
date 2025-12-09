@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 포털 리디자인</title>
+
+  <!-- ================== PART 1 ~ PART 12 : CSS 추가 영역 ================== -->
+  <style>
+    /* PART 1: 기본 reset & 폰트, body, a 태그 등 공통 스타일 */
+    /* TODO: 여기부터 원래 코드의
+       * { ... } / body { ... } / a { ... } 부분을 붙여넣기 */
+
+    /* PART 2: header, .logo-area, .logo-circle, .logo-text-* 등의 스타일 */
+    /* TODO: header 관련 CSS 붙이기 */
+
+    /* PART 3: .container, .grid, .grid-2, .grid-3, .card, .badge 등의 레이아웃/카드 공통 스타일 */
+
+    /* PART 4: .hero 관련 스타일 (메인 배너) */
+
+    /* PART 5: .service-grid, .service-item 관련 스타일 */
+
+    /* PART 6: 식단표 관련 스타일 (.meal-*) */
+
+    /* PART 7: 학사일정, 열람실 좌석, 전화번호, quick-links, footer 스타일 */
+
+    /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
+
+    /* PART 9: 취업·진로(job-*) 관련 스타일 */
+
+    /* PART 10: 신청 서비스(apply-*) 관련 스타일 */
+
+    /* PART 11: 증명·인증 & 참여·기부 공통(page-header, cert-grid, part-grid 등) 스타일 */
+
+    /* PART 12: cert/part 반응형 (@media (max-width: 900px), 1000px, 700px 등) */
+  </style>
+</head>
+<body>
+  <!-- ================== PART 13 ~ PART 16 : 상단 헤더 ================== -->
+
+  <!-- PART 13: header 전체 구조 -->
+  <header>
+    <!-- PART 14: 로고 영역 -->
+    <div class="logo-area" onclick="showSection('home')">
+      <div class="logo-circle">HY</div>
+      <div>
+        <div class="logo-text-main">한양대학교 포털</div>
+        <div class="logo-text-sub">Hanyang University Smart Campus</div>
+      </div>
+    </div>
+
+    <!-- PART 15: 상단 네비게이션 메뉴 -->
+    <nav>
+      <ul>
+        <li id="nav-home" class="active" onclick="showSection('home')">HOME</li>
+        <li id="nav-job" onclick="showSection('job')">취업·진로</li>
+        <li id="nav-apply" onclick="showSection('apply')">신청</li>
+        <li id="nav-cert" onclick="showSection('cert')">증명·인증</li>
+        <li id="nav-participate" onclick="showSection('participate')">참여·기부</li>
+      </ul>
+    </nav>
+
+    <!-- PART 16: 우측 날짜/로그인 영역 -->
+    <div class="header-right">
+      <span>2025-12-05(금)</span>
+      <button class="login-btn">지능정보양자공학 장선재님</button>
+    </div>
+  </header>
+
+  <!-- ================== 메인 컨테이너 시작 ================== -->
+  <main class="container">
+
+    <!-- ========== HOME 섹션 ========== -->
+    <div id="home-section">
+      <!-- PART 17: HOME 1행 - hero + 주요 서비스 카드 -->
+      <section class="grid grid-2" style="margin-bottom: 16px;">
+        <!-- hero 영역 (왼쪽 큰 파란 카드) -->
+        <!-- TODO: 원래 코드의
+             <article class="card hero"> ... </article>
+             내용을 여기 안에 붙이기 -->
+        <article class="card hero">
+          <!-- 임시 더미 내용 (코드 추가 전에도 화면에 뭔가 보이게) -->
+          <div class="hero-top">
+            <div class="hero-title">The Engine of Korea</div>
+            <div class="hero-sub">한양대학교</div>
+          </div>
+          <div class="hero-bottom">
+            <div>오늘의 주요 안내</div>
+            <div class="hero-tag">2026-1학기 국가장학금 1차 신청 진행 중</div>
+          </div>
+          <div class="hero-circle"></div>
+        </article>
+
+        <!-- 주요 서비스 카드 -->
+        <!-- TODO: 원래 코드의
+             <article class="card"> ... (주요 서비스 아이콘들) ... </article>
+             를 여기 안에 붙이기 -->
+        <article class="card">
+          <h2>주요 서비스<span class="badge">자주 쓰는 기능</span></h2>
+          <div class="service-grid">
+            <!-- 팀원들이 순차적으로 아이콘들 추가 -->
+          </div>
+        </article>
+      </section>
+
+      <!-- PART 18: HOME 2행 - 식단표 카드 -->
+      <section class="grid grid-3" style="margin-bottom: 16px;">
+        <article class="card">
+          <!-- 여기부터 식단표 관련 HTML을 붙이기 -->
+          <!-- 원래 코드의 <h2>식단표 ... ~ 마지막 식단 항목까지 -->
+        </article>
+
+        <!-- PART 19: HOME 2행 - 학사일정 카드 -->
+        <article class="card">
+          <!-- 원래 코드의 학사일정 카드 HTML 붙이기 -->
+        </article>
+
+        <!-- PART 20: HOME 2행 - 주요 기관 바로가기 카드 -->
+        <article class="card">
+          <!-- 원래 코드의 주요 기관 바로가기 quick-links HTML 붙이기 -->
+        </article>
+      </section>
+
+      <!-- PART 21: HOME 3행 - 좌석현황, 교내 전화번호, 나의 수강정보 -->
+      <section class="grid grid-3">
+        <!-- 학술정보관 좌석현황 카드 -->
+        <article class="card">
+          <!-- 원래 코드의 좌석현황 카드 HTML 붙이기 -->
+        </article>
+
+        <!-- 교내 전화번호 카드 -->
+        <article class="card">
+          <!-- 원래 코드의 교내 전화번호 카드 HTML 붙이기 -->
+        </article>
+
+        <!-- 나의 수강정보 카드 -->
+        <article class="card">
+          <!-- 원래 코드의 나의 수강정보 카드 HTML 붙이기 -->
+        </article>
+      </section>
+    </div>
+    <!-- ========== /HOME 섹션 ========== -->
+
+
+    <!-- ========== 취업·진로 섹션 ========== -->
+    <!-- PART 22: job-section 컨테이너 + 제목/탭 -->
+    <div id="job-section" style="display:none;">
+      <section class="job-container">
+        <!-- 여기 전체를 원래 코드의 job-container 부분으로 채우기 -->
+      </section>
+    </div>
+    <!-- ========== /취업·진로 섹션 ========== -->
+
+
+    <!-- ========== 신청 서비스 섹션 ========== -->
+    <!-- PART 23: apply-section 전체 -->
+    <div id="apply-section" style="display:none;">
+      <section class="apply-container">
+        <!-- 원래 코드의 신청 서비스 제목/설명 + apply-grid, apply-card들 붙이기 -->
+      </section>
+    </div>
+    <!-- ========== /신청 서비스 섹션 ========== -->
+
+
+    <!-- ========== 증명·인증 섹션 ========== -->
+    <!-- PART 24: cert-section 전체 -->
+    <div id="cert-section" style="display:none;">
+      <!-- 원래 코드의 page-header + cert-grid (증명발급, 교육인증 카드) 붙이기 -->
+    </div>
+    <!-- ========== /증명·인증 섹션 ========== -->
+
+
+    <!-- ========== 참여·기부 섹션 ========== -->
+    <!-- PART 25: participate-section 전체 -->
+    <div id="participate-section" style="display:none;">
+      <!-- 원래 코드의 page-header + part-grid (온라인민원, ERICA-WALLET, 발전기금·기부) 붙이기 -->
+    </div>
+    <!-- ========== /참여·기부 섹션 ========== -->
+
+  </main>
+
+  <!-- ================== PART 26: footer ================== -->
+  <footer>
+    © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
+  </footer>
+
+  <!-- ================== PART 27 ~ 30: script ================== -->
+  <script>
+    // PART 27: showSection 함수 뼈대
+    function showSection(which) {
+      // PART 28: DOM 요소 가져오기
+      const home        = document.getElementById('home-section');
+      const job         = document.getElementById('job-section');
+      const apply       = document.getElementById('apply-section');
+      const cert        = document.getElementById('cert-section');
+      const participate = document.getElementById('participate-section');
+
+      // PART 29: 섹션 보이기/숨기기 로직
+      home.style.display        = (which === 'home')        ? 'block' : 'none';
+      job.style.display         = (which === 'job')         ? 'block' : 'none';
+      apply.style.display       = (which === 'apply')       ? 'block' : 'none';
+      cert.style.display        = (which === 'cert')        ? 'block' : 'none';
+      participate.style.display = (which === 'participate') ? 'block' : 'none';
+
+      // PART 30: 네비게이션 active 토글
+      document.getElementById('nav-home').classList.toggle('active', which === 'home');
+      document.getElementById('nav-job').classList.toggle('active', which === 'job');
+      document.getElementById('nav-apply').classList.toggle('active', which === 'apply');
+      document.getElementById('nav-cert').classList.toggle('active', which === 'cert');
+      document.getElementById('nav-participate').classList.toggle('active', which === 'participate');
+    }
+  </script>
+</body>
+</html>
 
