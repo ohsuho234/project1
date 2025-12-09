@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>한양대학교 포털 리디자인 – Version 3</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Noto Sans KR"; }
+    body { background: #f5f7fb; color: #222; }
+    a { text-decoration: none; color: inherit; }
+
+    /* 헤더 */
+    header {
+      background: #005eb8;
+      padding: 12px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul { list-style: none; display: flex; gap: 18px; }
+    nav li { padding: 6px 12px; border-radius: 12px; cursor: pointer; }
+    nav li.active { background: rgba(255,255,255,0.2); }
+
+    .container { max-width: 1180px; margin: 20px auto; }
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* 카드 공통 */
+    .card {
+      background: white;
+      padding: 18px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 18px;
+    }
+
+    /* HOME 배너 */
+    .hero {
+      background: linear-gradient(135deg, #005eb8, #1289ff);
+      color: white;
+      padding: 30px;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-circle {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.09);
+      bottom: -40px;
+      right: -40px;
+    }
+
+    .placeholder-box {
+      font-size: 18px;
+      padding: 40px;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div><strong>한양대학교 포털 Prototype v3</strong></div>
+
+    <nav>
+      <ul>
+        <li id="nav-home" class="active" onclick="showSection('home')">HOME</li>
+        <li id="nav-job" onclick="showSection('job')">취업·진로</li>
+        <li id="nav-study" onclick="showSection('study')">학습·연구</li>
+        <li id="nav-register" onclick="showSection('register')">등록·장학</li>
+        <li id="nav-apply" onclick="showSection('apply')">신청</li>
+        <li id="nav-cert" onclick="showSection('cert')">증명·인증</li>
+        <li id="nav-participate" onclick="showSection('participate')">참여·기부</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+      <div class="hero card">
+        <h2>The Engine of Korea – Hanyang University</h2>
+        <p>버전 3: SPA 네비게이션 기능이 추가된 기본 구조</p>
+        <div class="hero-circle"></div>
+      </div>
+
+      <div class="card">
+        <h3>주요 서비스 Placeholder</h3>
+        <p>버전 4에서 실제 기능/아이콘이 여기에 채워질 예정입니다.</p>
+      </div>
+    </section>
+
+    <!-- 취업진로 -->
+    <section id="job" class="section">
+      <div class="card placeholder-box">취업·진로 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+    <!-- 학습연구 -->
+    <section id="study" class="section">
+      <div class="card placeholder-box">학습·연구 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+    <!-- 등록장학 -->
+    <section id="register" class="section">
+      <div class="card placeholder-box">등록·장학 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+    <!-- 신청 -->
+    <section id="apply" class="section">
+      <div class="card placeholder-box">신청 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+    <!-- 증명인증 -->
+    <section id="cert" class="section">
+      <div class="card placeholder-box">증명·인증 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+    <!-- 참여기부 -->
+    <section id="participate" class="section">
+      <div class="card placeholder-box">참여·기부 페이지 (Ver.3 기본 틀)</div>
+    </section>
+
+  </main>
+
+  <script>
+    function showSection(name) {
+      const sections = document.querySelectorAll('.section');
+      const navs = document.querySelectorAll('nav li');
+
+      sections.forEach(s => s.classList.remove('active'));
+      navs.forEach(n => n.classList.remove('active'));
+
+      document.getElementById(name).classList.add('active');
+      document.getElementById('nav-' + name).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
