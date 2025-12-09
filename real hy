@@ -143,7 +143,44 @@
       bottom: -60px;
     }
     /* PART 7: 학사일정, 열람실 좌석, 전화번호, quick-links, footer 스타일 */
+.service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 8px;
+    }
 
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 4px;
+      border-radius: 12px;
+      transition: background 0.15s, transform 0.15s;
+      cursor: pointer;
+    }
+
+    .service-item span.icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7f1ff;
+      font-size: 16px;
+    }
+
+    .service-item p {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .service-item:hover {
+      background: #f3f7ff;
+      transform: translateY(-1px);
+    }
     /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
 
     /* PART 9: 취업·진로(job-*) 관련 스타일 */
