@@ -745,7 +745,28 @@
               <span class="icon">💰</span>
               <p>등록금/장학</p>
             </a>
- 
+
+<a class="service-item"
+               href="study_research.html"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">🔍</span>
+              <p>수업/연구</p>
+            </a>
+
+ <a class="service-item"
+               href="#"
+               onclick="showSection('cert'); return false;">
+              <span class="icon">📄</span>
+              <p>증명·인증</p>
+            </a>
+
+<a class="service-item"
+               href="#"
+               onclick="showSection('participate'); return false;">
+              <span class="icon">🤝</span>
+              <p>참여·기부</p>
+            </a>
 <!-- 팀원들이 순차적으로 아이콘들 추가 -->
           </div>
         </article>
