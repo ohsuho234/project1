@@ -296,7 +296,42 @@
       margin-top: 2px;
     }
     /* PART 9: 취업·진로(job-*) 관련 스타일 */
+    .schedule-list { font-size: 12px; margin-top: 6px; }
 
+    .schedule-item {
+      padding: 6px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .schedule-item:last-child { border-bottom: none; }
+
+    .schedule-date {
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: #005eb8;
+    }
+
+    .schedule-text { color: #444; }
+
+    .lab-list { font-size: 12px; margin-top: 6px; }
+
+    .lab-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .lab-row:last-child { border-bottom: none; }
+
+    .lab-name { flex: 1.1; }
+
+    .lab-info {
+      flex: 1;
+      text-align: right;
+      font-size: 11px;
+      color: #666;
+    }
     /* PART 10: 신청 서비스(apply-*) 관련 스타일 */
 
     /* PART 11: 증명·인증 & 참여·기부 공통(page-header, cert-grid, part-grid 등) 스타일 */
