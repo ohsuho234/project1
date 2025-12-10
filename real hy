@@ -557,6 +557,104 @@
       .apply-grid { grid-template-columns: 1fr; }
     }
     <!-- PART 14: 로고 영역 -->
+    
+.page-header {
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .section-card {
+      font-size: 12px;
+    }
+
+    .section-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-card h2 span.icon { font-size: 16px; }
+
+    .group {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .group:first-of-type {
+      margin-top: 4px;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .group-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #005eb8;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .group-title::before {
+      content: "▾";
+      font-size: 10px;
+      color: #777;
+    }
+
+    .item-list {
+      list-style: none;
+      padding-left: 10px;
+      margin-left: 2px;
+      border-left: 1px solid #e0e4ee;
+    }
+
+    .item-list li {
+      padding: 3px 0;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .item-list li:hover {
+      color: #005eb8;
+      text-decoration: underline;
+    }
+
+    .part-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .cert-grid { grid-template-columns: 1fr; }
+      .part-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===================== PART 15: 상단 헤더 ===================== -->
+  <header>
     <div class="logo-area" onclick="showSection('home')">
       <div class="logo-circle">HY</div>
       <div>
