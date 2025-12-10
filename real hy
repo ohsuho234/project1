@@ -736,6 +736,13 @@
               <p>수강신청</p>
             </a>
 
+           <a class="service-item"
+               href="#"
+               onclick="showSection('apply'); return false;">
+              <span class="icon">📥</span>
+              <p>신청</p>
+            </a>
+
             
  
 <!-- 팀원들이 순차적으로 아이콘들 추가 -->
