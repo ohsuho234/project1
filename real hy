@@ -188,7 +188,21 @@
     /* PART 10: 신청 서비스(apply-*) 관련 스타일 */
 
     /* PART 11: 증명·인증 & 참여·기부 공통(page-header, cert-grid, part-grid 등) 스타일 */
+@media (max-width: 900px) {
+      .grid-2,
+      .grid-3 { grid-template-columns: 1fr; }
 
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        row-gap: 6px;
+      }
+    }
     /* PART 12: cert/part 반응형 (@media (max-width: 900px), 1000px, 700px 등) */
   </style>
 </head>
