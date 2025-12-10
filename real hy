@@ -243,11 +243,132 @@
       transform: translateY(-1px);
     }
     /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
+     .meal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
 
+    .meal-tabs span {
+      font-size: 12px;
+      margin-left: 6px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .meal-tabs span.active {
+      background: #005eb8;
+      color: #fff;
+    }
+
+    .meal-list {
+      margin-top: 6px;
+      font-size: 12px;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+
+    .meal-item {
+      padding: 6px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .meal-item:last-child {
+      border-bottom: none;
+    }
+
+    .meal-time {
+      color: #555;
+      font-weight: 600;
+    }
+
+    .meal-menu {
+      margin-top: 2px;
+      color: #444;
+    }
+
+    .meal-price {
+      font-size: 11px;
+      color: #888;
+      margin-top: 2px;
+    }
     /* PART 9: 취업·진로(job-*) 관련 스타일 */
+    .schedule-list { font-size: 12px; margin-top: 6px; }
 
+    .schedule-item {
+      padding: 6px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .schedule-item:last-child { border-bottom: none; }
+
+    .schedule-date {
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: #005eb8;
+    }
+
+    .schedule-text { color: #444; }
+
+    .lab-list { font-size: 12px; margin-top: 6px; }
+
+    .lab-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .lab-row:last-child { border-bottom: none; }
+
+    .lab-name { flex: 1.1; }
+
+    .lab-info {
+      flex: 1;
+      text-align: right;
+      font-size: 11px;
+      color: #666;
+    }
     /* PART 10: 신청 서비스(apply-*) 관련 스타일 */
+    .phone-row {
+      font-size: 12px;
+      padding: 4px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
 
+    .phone-row:last-child { border-bottom: none; }
+
+    .phone-name {
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .quick-links { font-size: 12px; margin-top: 4px; }
+
+    .quick-links a {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid #edf1f7;
+      align-items: center;
+    }
+
+    .quick-links a:last-child { border-bottom: none; }
+
+    .quick-links span.arrow {
+      font-size: 13px;
+      color: #999;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 16px 0 24px;
+    }
     /* PART 11: 증명·인증 & 참여·기부 공통(page-header, cert-grid, part-grid 등) 스타일 */
 
     /* PART 12: cert/part 반응형 (@media (max-width: 900px), 1000px, 700px 등) */
