@@ -243,7 +243,58 @@
       transform: translateY(-1px);
     }
     /* PART 8: HOME 반응형 스타일 (@media (max-width: 900px) ...) */
+     .meal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
 
+    .meal-tabs span {
+      font-size: 12px;
+      margin-left: 6px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .meal-tabs span.active {
+      background: #005eb8;
+      color: #fff;
+    }
+
+    .meal-list {
+      margin-top: 6px;
+      font-size: 12px;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+
+    .meal-item {
+      padding: 6px 0;
+      border-bottom: 1px solid #edf1f7;
+    }
+
+    .meal-item:last-child {
+      border-bottom: none;
+    }
+
+    .meal-time {
+      color: #555;
+      font-weight: 600;
+    }
+
+    .meal-menu {
+      margin-top: 2px;
+      color: #444;
+    }
+
+    .meal-price {
+      font-size: 11px;
+      color: #888;
+      margin-top: 2px;
+    }
     /* PART 9: 취업·진로(job-*) 관련 스타일 */
 
     /* PART 10: 신청 서비스(apply-*) 관련 스타일 */
