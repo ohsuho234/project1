@@ -719,6 +719,16 @@
               <span class="icon">🚌</span>
               <p>버스하냥</p>
             </a>
+
+            <a class="service-item"
+               href="https://hybus.app/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">🚌</span>
+              <p>버스하냥</p>
+            </a>
+
+            
  
 <!-- 팀원들이 순차적으로 아이콘들 추가 -->
           </div>
