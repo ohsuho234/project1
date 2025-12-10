@@ -557,6 +557,104 @@
       .apply-grid { grid-template-columns: 1fr; }
     }
     <!-- PART 14: 로고 영역 -->
+    
+.page-header {
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-desc {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .section-card {
+      font-size: 12px;
+    }
+
+    .section-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-card h2 span.icon { font-size: 16px; }
+
+    .group {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .group:first-of-type {
+      margin-top: 4px;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .group-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #005eb8;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .group-title::before {
+      content: "▾";
+      font-size: 10px;
+      color: #777;
+    }
+
+    .item-list {
+      list-style: none;
+      padding-left: 10px;
+      margin-left: 2px;
+      border-left: 1px solid #e0e4ee;
+    }
+
+    .item-list li {
+      padding: 3px 0;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .item-list li:hover {
+      color: #005eb8;
+      text-decoration: underline;
+    }
+
+    .part-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .cert-grid { grid-template-columns: 1fr; }
+      .part-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===================== PART 15: 상단 헤더 ===================== -->
+  <header>
     <div class="logo-area" onclick="showSection('home')">
       <div class="logo-circle">HY</div>
       <div>
@@ -614,7 +712,40 @@
         <article class="card">
           <h2>주요 서비스<span class="badge">자주 쓰는 기능</span></h2>
           <div class="service-grid">
-            <!-- 팀원들이 순차적으로 아이콘들 추가 -->
+            <a class="service-item"
+               href="https://hybus.app/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">🚌</span>
+              <p>버스하냥</p>
+            </a>
+
+            <a class="service-item"
+               href="https://hy-mooc.hanyang.ac.kr/lms"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">📚</span>
+              <p>HY-LMS<br>(e-class)</p>
+            </a>
+
+            <a class="service-item"
+               href="https://portal.hanyang.ac.kr/sugang/sulg.do"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">📝</span>
+              <p>수강신청</p>
+            </a>
+
+           <a class="service-item"
+               href="#"
+               onclick="showSection('apply'); return false;">
+              <span class="icon">📥</span>
+              <p>신청</p>
+            </a>
+
+            
+ 
+<!-- 팀원들이 순차적으로 아이콘들 추가 -->
           </div>
         </article>
       </section>
