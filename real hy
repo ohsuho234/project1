@@ -721,11 +721,19 @@
             </a>
 
             <a class="service-item"
-               href="https://hybus.app/"
+               href="https://hy-mooc.hanyang.ac.kr/lms"
                target="_blank"
                rel="noopener noreferrer">
-              <span class="icon">🚌</span>
-              <p>버스하냥</p>
+              <span class="icon">📚</span>
+              <p>HY-LMS<br>(e-class)</p>
+            </a>
+
+            <a class="service-item"
+               href="https://portal.hanyang.ac.kr/sugang/sulg.do"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="icon">📝</span>
+              <p>수강신청</p>
             </a>
 
             
