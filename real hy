@@ -370,15 +370,192 @@
       padding: 16px 0 24px;
     }
     /* PART 11: 증명·인증 & 참여·기부 공통(page-header, cert-grid, part-grid 등) 스타일 */
+@media (max-width: 900px) {
+      .grid-2,
+      .grid-3 { grid-template-columns: 1fr; }
 
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        row-gap: 6px;
+      }
+    }
     /* PART 12: cert/part 반응형 (@media (max-width: 900px), 1000px, 700px 등) */
   </style>
 </head>
 <body>
+.job-container {
+      background: #fff;
+      margin-top: 10px;
+      padding: 25px 30px;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    .job-title-main {
+      font-size: 20px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .job-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .job-tab {
+      padding: 7px 14px;
+      font-size: 13px;
+      border-radius: 8px;
+      background: #eef1f6;
+      cursor: pointer;
+    }
+
+    .job-tab.active {
+      background: #005eb8;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .job-table-wrap {
+      margin-top: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e5e5;
+    }
+
+    .job-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .job-table th {
+      background: #f2f4f8;
+      padding: 10px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .job-table td {
+      padding: 10px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .job-tag {
+      padding: 4px 7px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      display: inline-block;
+    }
+
+    .job-tag.S { background: #00a8ff; }
+    .job-tag.H { background: #4b7bec; }
+    .job-tag.E { background: #fa8231; }
+
+    .job-pagination {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .job-pagination span {
+      padding: 6px 9px;
+      margin: 0 3px;
+      background: #eef1f6;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .job-pagination .active {
+      background: #005eb8;
+      color: #fff;
+    }
   <!-- ================== PART 13 ~ PART 16 : 상단 헤더 ================== -->
 
   <!-- PART 13: header 전체 구조 -->
   <header>
+.apply-container {
+      background: #fff;
+      margin-top: 10px;
+      padding: 26px 30px 30px;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    .apply-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .apply-desc {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .apply-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .apply-card {
+      background: #f9fafc;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+      font-size: 13px;
+    }
+
+    .apply-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .apply-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2d8cff;
+    }
+
+    .apply-card ul {
+      list-style: none;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .apply-card li + li { margin-top: 2px; }
+
+    .apply-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #777;
+      margin: 10px 0 6px;
+    }
+
+    @media (max-width: 1000px) {
+      .apply-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      .apply-grid { grid-template-columns: 1fr; }
+    }
     <!-- PART 14: 로고 영역 -->
     <div class="logo-area" onclick="showSection('home')">
       <div class="logo-circle">HY</div>
