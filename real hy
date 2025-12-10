@@ -386,10 +386,7 @@
       }
     }
     /* PART 12: cert/part 반응형 (@media (max-width: 900px), 1000px, 700px 등) */
-  </style>
-</head>
-<body>
-.job-container {
+    .job-container {
       background: #fff;
       margin-top: 10px;
       padding: 25px 30px;
@@ -481,11 +478,9 @@
       background: #005eb8;
       color: #fff;
     }
-  <!-- ================== PART 13 ~ PART 16 : 상단 헤더 ================== -->
-
-  <!-- PART 13: header 전체 구조 -->
-  <header>
-.apply-container {
+ 
+    
+    .apply-container {
       background: #fff;
       margin-top: 10px;
       padding: 26px 30px 30px;
@@ -556,9 +551,9 @@
     @media (max-width: 700px) {
       .apply-grid { grid-template-columns: 1fr; }
     }
-    <!-- PART 14: 로고 영역 -->
     
-.page-header {
+    
+    .page-header {
       margin-bottom: 16px;
     }
 
@@ -859,4 +854,3 @@
   </script>
 </body>
 </html>
-
