@@ -303,6 +303,77 @@
 
   <!-- PART 13: header 전체 구조 -->
   <header>
+.apply-container {
+      background: #fff;
+      margin-top: 10px;
+      padding: 26px 30px 30px;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    .apply-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .apply-desc {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .apply-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .apply-card {
+      background: #f9fafc;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+      font-size: 13px;
+    }
+
+    .apply-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .apply-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2d8cff;
+    }
+
+    .apply-card ul {
+      list-style: none;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .apply-card li + li { margin-top: 2px; }
+
+    .apply-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #777;
+      margin: 10px 0 6px;
+    }
+
+    @media (max-width: 1000px) {
+      .apply-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      .apply-grid { grid-template-columns: 1fr; }
+    }
     <!-- PART 14: 로고 영역 -->
     <div class="logo-area" onclick="showSection('home')">
       <div class="logo-circle">HY</div>
