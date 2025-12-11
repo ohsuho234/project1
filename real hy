@@ -951,6 +951,15 @@
             </tr>
           </table>
         </div>
+
+        <div class="job-pagination">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>››</span>
+        </div>
       </section>
     </div>
     <!-- ========== /취업·진로 섹션 ========== -->
