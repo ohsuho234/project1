@@ -840,7 +840,12 @@
 
         <!-- 나의 수강정보 카드 -->
         <article class="card">
-          <!-- 원래 코드의 나의 수강정보 카드 HTML 붙이기 -->
+          <a href="https://hanyangerica.everytime.kr/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="card-link">
+            <h2>나의 수강정보</h2>
+            <h3>오늘의 수업</h3>
         </article>
       </section>
     </div>
