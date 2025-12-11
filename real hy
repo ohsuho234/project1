@@ -670,9 +670,7 @@
   <ul>
     <li id="nav-home" class="active" onclick="showSection('home')">HOME</li>
     <li id="nav-job" onclick="showSection('job')">취업·진로</li>
-    <li id="nav-apply" onclick="showSection('apply')">신청</li>
-    <li id="nav-cert" onclick="showSection('cert')">증명·인증</li>
-    <li id="nav-participate" onclick="showSection('participate')">참여·기부</li>
+
   </ul>
 </nav>
 
