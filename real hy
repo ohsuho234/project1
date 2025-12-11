@@ -884,6 +884,16 @@
           <div class="job-tab">장학</div>
           <div class="job-tab">행사안내</div>
         </div>
+
+        <div class="job-table-wrap">
+          <table class="job-table">
+            <tr>
+              <th style="width: 90px;">구분</th>
+              <th>제목</th>
+              <th style="width: 200px;">작성자</th>
+              <th style="width: 110px;">작성일</th>
+            </tr>
+
       </section>
     </div>
     <!-- ========== /취업·진로 섹션 ========== -->
