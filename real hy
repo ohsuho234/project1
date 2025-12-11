@@ -1077,12 +1077,121 @@
     <!-- PART 23: apply-section 전체 -->
     <div id="apply-section" style="display:none;">
       <section class="apply-container">
-        <!-- 원래 코드의 신청 서비스 제목/설명 + apply-grid, apply-card들 붙이기 -->
-      </section>
-    </div>
+        <h1 class="apply-title">신청 서비스</h1>
+        <p class="apply-desc">
+          온라인 상담, 생활관, 학적변동, 등록·장학, 소프트웨어 신청까지 자주 사용하는 신청 기능을 한 화면에서 확인할 수 있습니다.
+        </p>
+<!-- 원래 코드의 신청 서비스 제목/설명 + apply-grid, apply-card들 붙이기 -->
+        
     <!-- ========== /신청 서비스 섹션 ========== -->
 
+       <div class="apply-grid">
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 장학·학생지원</h3>
+            <ul>
+              <li>예민학생상담</li>
+              <li>개인상담 / 집단상담 신청</li>
+              <li>장학신청·조회</li>
+              <li>학업중단·휴학계 신청</li>
+              <li>My Page 바로가기</li>
+            </ul>
+            <div class="apply-section-label">상담 (지도교수/취업)</div>
+            <ul>
+              <li>지도교수 상담 신청</li>
+              <li>취업 상담 신청</li>
+            </ul>
+            <div class="apply-section-label">논문</div>
+            <ul><li>학위논문 안내</li></ul>
+          </article>
 
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 생활관·시설</h3>
+            <ul>
+              <li>생활관 입사신청</li>
+              <li>생활관 사전점검 신청</li>
+              <li>생활관 입퇴사 확인서</li>
+              <li>생활관 벌점조회</li>
+              <li>생활관 시설보수 요청</li>
+            </ul>
+            <div class="apply-section-label">시설 / 공간</div>
+            <ul>
+              <li>강의실 대관신청</li>
+              <li>자유라운지 예약(서울)</li>
+              <li>자유라운지 예약(ERICA)</li>
+              <li>공용세미나실 예약</li>
+            </ul>
+          </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 학적·성적·전공</h3>
+            <ul>
+              <li>학적변동 신청</li>
+              <li>전과/다전공 신청</li>
+              <li>복수전공 신청</li>
+              <li>부전공 신청</li>
+              <li>전공심화 신청</li>
+            </ul>
+            <div class="apply-section-label">성적 관련</div>
+            <ul>
+              <li>성적정정요청</li>
+              <li>학점인정 신청</li>
+              <li>S/U 성적전환 신청</li>
+            </ul>
+          </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 전공·학점교류</h3>
+            <ul>
+              <li>마이크로전공 신청</li>
+              <li>복수전공/부전공 확인</li>
+              <li>트랙신청 / 사유확인</li>
+            </ul>
+            <div class="apply-section-label">학점교류관리</div>
+            <ul>
+              <li>국내교류대학 학점인정</li>
+              <li>자비유학학점 신청</li>
+              <li>어학연수학점 신청</li>
+              <li>교환학생 학점인정</li>
+            </ul>
+          </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 등록·장학</h3>
+            <ul>
+              <li>등록금 분할납부 신청</li>
+              <li>등록금 연기 신청</li>
+              <li>복학생 등록 유예신청</li>
+              <li>장학금 확인서 발급</li>
+            </ul>
+            <div class="apply-section-label">각종 학적 관련 증명</div>
+            <ul>
+              <li>제적확인서 신청</li>
+              <li>실습확인서 신청</li>
+            </ul>
+          </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> IT·봉사·기타</h3>
+            <ul>
+              <li>정보보안교육 이수 확인</li>
+              <li>VPN 사용신청</li>
+            </ul>
+            <div class="apply-section-label">소프트웨어</div>
+            <ul>
+              <li>Microsoft 365 신청</li>
+              <li>Microsoft 365 라이선스 변경</li>
+            </ul>
+            <div class="apply-section-label">자원봉사·응급</div>
+            <ul>
+              <li>봉사활동 신청/확인</li>
+              <li>응급실비 지원신청</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
+         
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
