@@ -670,16 +670,7 @@
   <ul>
     <li id="nav-home" class="active" onclick="showSection('home')">HOME</li>
     <li id="nav-job" onclick="showSection('job')">취업·진로</li>
-    <li id="nav-apply" onclick="showSection('apply')">신청</li>
-    <li id="nav-cert" onclick="showSection('cert')">증명·인증</li>
-    <li id="nav-participate" onclick="showSection('participate')">참여·기부</li>
-
-    <!-- 여기부터 외부 서비스 바로가기 -->
-    <li onclick="window.open('https://hybus.app/', '_blank')">버스하냥</li>
-    <li onclick="window.open('https://hy-mooc.hanyang.ac.kr/lms', '_blank')">HY-LMS</li>
-    <li onclick="window.open('https://portal.hanyang.ac.kr/sugang/sulg.do', '_blank')">수강신청</li>
-    <li onclick="window.open('scholarship.html', '_blank')">등록금·장학</li>
-    <li onclick="window.open('study_research.html', '_blank')">수업·연구</li>
+    
   </ul>
 </nav>
 
