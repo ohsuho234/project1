@@ -1155,6 +1155,21 @@
             </ul>
           </article>
 
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 등록·장학</h3>
+            <ul>
+              <li>등록금 분할납부 신청</li>
+              <li>등록금 연기 신청</li>
+              <li>복학생 등록 유예신청</li>
+              <li>장학금 확인서 발급</li>
+            </ul>
+            <div class="apply-section-label">각종 학적 관련 증명</div>
+            <ul>
+              <li>제적확인서 신청</li>
+              <li>실습확인서 신청</li>
+            </ul>
+          </article>
+
          
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
