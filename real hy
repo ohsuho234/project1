@@ -794,7 +794,29 @@
       <section class="grid grid-3">
         <!-- 학술정보관 좌석현황 카드 -->
         <article class="card">
-          <!-- 원래 코드의 좌석현황 카드 HTML 붙이기 -->
+          <h2>학술정보관 좌석현황<span class="badge">실시간</span></h2>
+          <div class="lab-list">
+            <div class="lab-row">
+              <span class="lab-name">제1열람실[지하1층]</span>
+              <span class="lab-info">사용 320 / 400 · 잔여 80석</span>
+            </div>
+            <div class="lab-row">
+              <span class="lab-name">제2열람실[지하1층]</span>
+              <span class="lab-info">사용 210 / 300 · 잔여 90석</span>
+            </div>
+            <div class="lab-row">
+              <span class="lab-name">제3열람실[3층]</span>
+              <span class="lab-info">사용 40 / 90 · 잔여 50석</span>
+            </div>
+            <div class="lab-row">
+              <span class="lab-name">제4열람실[3층]</span>
+              <span class="lab-info">사용 30 / 80 · 잔여 50석</span>
+            </div>
+            <div class="lab-row">
+              <span class="lab-name">HOLMZ 열람석</span>
+              <span class="lab-info">사용 30 / 80 · 잔여 50석</span>
+            </div>
+          </div>
         </article>
 
         <!-- 교내 전화번호 카드 -->
