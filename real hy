@@ -670,9 +670,12 @@
   <ul>
     <li id="nav-home" class="active" onclick="showSection('home')">HOME</li>
     <li id="nav-job" onclick="showSection('job')">취업·진로</li>
-    
+    <li id="nav-apply" onclick="showSection('apply')">신청</li>
+    <li id="nav-cert" onclick="showSection('cert')">증명·인증</li>
+    <li id="nav-participate" onclick="showSection('participate')">참여·기부</li>
   </ul>
 </nav>
+
 
     <!-- PART 16: 우측 날짜/로그인 영역 -->
     <div class="header-right">
@@ -1487,8 +1490,7 @@
       document.getElementById('nav-cert').classList.toggle('active', which === 'cert');
       document.getElementById('nav-participate').classList.toggle('active', which === 'participate');
     }
-      document.addEventListener('DOMContentLoaded', () => {
-        showSection('home');
+      document.addEventListener('DOMContentLoaded') 
   </script>
 </body>
 </html>
