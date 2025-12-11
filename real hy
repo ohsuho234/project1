@@ -1138,6 +1138,24 @@
               <li>S/U 성적전환 신청</li>
             </ul>
           </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 전공·학점교류</h3>
+            <ul>
+              <li>마이크로전공 신청</li>
+              <li>복수전공/부전공 확인</li>
+              <li>트랙신청 / 사유확인</li>
+            </ul>
+            <div class="apply-section-label">학점교류관리</div>
+            <ul>
+              <li>국내교류대학 학점인정</li>
+              <li>자비유학학점 신청</li>
+              <li>어학연수학점 신청</li>
+              <li>교환학생 학점인정</li>
+            </ul>
+          </article>
+
+         
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
