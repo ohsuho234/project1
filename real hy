@@ -776,6 +776,12 @@
       <section class="grid grid-3" style="margin-bottom: 16px;">
         <article class="card">
           <!-- 여기부터 식단표 관련 HTML을 붙이기 -->
+          <h2>
+            식단표
+            <span class="badge">ERICA</span>
+            <span class="badge badge-inactive">서울</span>
+          </h2>
+
           <!-- 원래 코드의 <h2>식단표 ... ~ 마지막 식단 항목까지 -->
         </article>
 
