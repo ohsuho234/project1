@@ -1103,6 +1103,24 @@
             <div class="apply-section-label">논문</div>
             <ul><li>학위논문 안내</li></ul>
           </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 생활관·시설</h3>
+            <ul>
+              <li>생활관 입사신청</li>
+              <li>생활관 사전점검 신청</li>
+              <li>생활관 입퇴사 확인서</li>
+              <li>생활관 벌점조회</li>
+              <li>생활관 시설보수 요청</li>
+            </ul>
+            <div class="apply-section-label">시설 / 공간</div>
+            <ul>
+              <li>강의실 대관신청</li>
+              <li>자유라운지 예약(서울)</li>
+              <li>자유라운지 예약(ERICA)</li>
+              <li>공용세미나실 예약</li>
+            </ul>
+          </article>
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
