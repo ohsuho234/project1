@@ -829,6 +829,9 @@
             <div class="phone-row">
               <span class="phone-name">학사팀</span> 031-400-1234
             </div>
+            <div class="phone-row">
+              <span class="phone-name">장학팀</span> 031-400-5678
+            </div>
         </article>
 
         <!-- 나의 수강정보 카드 -->
