@@ -1193,22 +1193,156 @@
 
          
     <!-- ========== 증명·인증 섹션 ========== -->
-    <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
-      <!-- 원래 코드의 page-header + cert-grid (증명발급, 교육인증 카드) 붙이기 -->
+      <section class="page-header">
+        <div class="page-title">증명·인증 서비스</div>
+        <div class="page-desc">
+          재학·성적 등 각종 증명서 발급부터 HONOR·학연산클러스터의 교육인증까지 한 화면에서 확인할 수 있습니다.
+        </div>
+      </section>
+
+      <section class="cert-grid">
+        <article class="card section-card">
+          <h2><span class="icon">📄</span>증명발급</h2>
+
+          <div class="group">
+            <div class="group-title">증명서 발급</div>
+            <ul class="item-list">
+              <li>증명발급안내</li>
+              <li>인터넷증명발급(유료)</li>
+              <li>포털증명발급(무료)</li>
+              <li>우편증명발급신청</li>
+              <li>우편증명신청내역</li>
+              <li>발급내역조회</li>
+              <li>진위여부확인</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">급여 관련 증명</div>
+            <ul class="item-list">
+              <li>기타소득영수증</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card section-card">
+          <h2><span class="icon">✅</span>교육인증</h2>
+
+          <div class="group">
+            <div class="group-title">HONOR인증</div>
+            <ul class="item-list">
+              <li>지원신청</li>
+              <li>현황조회</li>
+              <li>기획력/특강</li>
+              <li>활동신청</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">학연산클러스터인증</div>
+            <ul class="item-list">
+              <li>지원신청</li>
+              <li>현황조회</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </div>
-    <!-- ========== /증명·인증 섹션 ========== -->
 
 
     <!-- ========== 참여·기부 섹션 ========== -->
     <!-- PART 25: participate-section 전체 -->
     <div id="participate-section" style="display:none;">
-      <!-- 원래 코드의 page-header + part-grid (온라인민원, ERICA-WALLET, 발전기금·기부) 붙이기 -->
+      <section class="page-header">
+        <div class="page-title">참여·민원·기부 서비스</div>
+        <div class="page-desc">
+          온라인 민원과 제보, 비교과 프로그램·마일리지, 발전기부 관련 서비스를 한 화면에서 제공합니다.
+        </div>
+      </section>
+
+      <section class="part-grid">
+        <!-- 온라인민원 -->
+        <article class="card section-card">
+          <h2><span class="icon">💬</span>온라인민원</h2>
+
+          <div class="group">
+            <div class="group-title">청탁금지법</div>
+            <ul class="item-list">
+              <li>부정청탁/수수금지금품 신고(제3자신고)</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">민원</div>
+            <ul class="item-list">
+              <li>온라인 민원 신청</li>
+              <li>민원보기</li>
+              <li>FAQ 보기</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">제보</div>
+            <ul class="item-list">
+              <li>한양신문고</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ERICA-WALLET -->
+        <article class="card section-card">
+          <h2><span class="icon">🎫</span>ERICA-WALLET</h2>
+
+          <div class="group">
+            <div class="group-title">비교과 프로그램</div>
+            <ul class="item-list">
+              <li>비교과 프로그램 신청</li>
+              <li>비교과 프로그램 활동현황</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">PBL · SCI 인증</div>
+            <ul class="item-list">
+              <li>PBL 인증 이수조회</li>
+              <li>SCI 인증 이수조회</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">My Career</div>
+            <ul class="item-list">
+              <li>포트폴리오</li>
+              <li>마일리지 및 인증</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 발전기금·기부 -->
+        <article class="card section-card">
+          <h2><span class="icon">🐷</span>발전기금 · 기부</h2>
+
+          <div class="group">
+            <div class="group-title">기부/약정 관리</div>
+            <ul class="item-list">
+              <li>기부약정등록</li>
+              <li>약정내역</li>
+              <li>연말정산 영수증 내역</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">소식</div>
+            <ul class="item-list">
+              <li>기부뉴스</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </div>
-    <!-- ========== /참여·기부 섹션 ========== -->
 
   </main>
-
   <!-- ================== PART 26: footer ================== -->
   <footer>
     © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
