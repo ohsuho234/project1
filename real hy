@@ -1261,7 +1261,7 @@
         </div>
       </section>
 
-     <section class="part-grid">
+      <section class="part-grid">
         <!-- 온라인민원 -->
         <article class="card section-card">
           <h2><span class="icon">💬</span>온라인민원</h2>
@@ -1286,6 +1286,35 @@
             <div class="group-title">제보</div>
             <ul class="item-list">
               <li>한양신문고</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ERICA-WALLET -->
+        <article class="card section-card">
+          <h2><span class="icon">🎫</span>ERICA-WALLET</h2>
+
+          <div class="group">
+            <div class="group-title">비교과 프로그램</div>
+            <ul class="item-list">
+              <li>비교과 프로그램 신청</li>
+              <li>비교과 프로그램 활동현황</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">PBL · SCI 인증</div>
+            <ul class="item-list">
+              <li>PBL 인증 이수조회</li>
+              <li>SCI 인증 이수조회</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">My Career</div>
+            <ul class="item-list">
+              <li>포트폴리오</li>
+              <li>마일리지 및 인증</li>
             </ul>
           </div>
         </article>
