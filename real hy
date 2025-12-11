@@ -846,6 +846,13 @@
              class="card-link">
             <h2>나의 수강정보</h2>
             <h3>오늘의 수업</h3>
+
+            <div style="font-size:12px; margin-top:6px;">
+              <div class="meal-item">
+                <div class="meal-time">09:00 ~ 11:00 · 오픈소스개발과활용</div>
+                <div class="meal-menu">제2과학기술관 304 / 이수진 교수</div>
+              </div>
+
         </article>
       </section>
     </div>
