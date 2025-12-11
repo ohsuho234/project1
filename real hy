@@ -826,6 +826,9 @@
              rel="noopener noreferrer"
              class="card-link">
             <h2>교내 전화번호</h2>
+            <div class="phone-row">
+              <span class="phone-name">학사팀</span> 031-400-1234
+            </div>
         </article>
 
         <!-- 나의 수강정보 카드 -->
