@@ -982,8 +982,115 @@
         </article>
       </section>
     </div>
-    <!-- ========== /HOME 섹션 ========== -->
+    <!-- ==========  ========== -->
+        <!-- ====== 등록금·장학 섹션 ====== -->
+    <div id="scholar-section" style="display:none;">
+      <section class="page-header">
+        <div class="page-title">등록금 · 장학 서비스</div>
+        <div class="page-desc">
+          등록금 납부, 분할납부, 장학금 신청·확인, 각종 등록 관련 업무를 한 화면에서 확인할 수 있습니다.
+        </div>
+      </section>
 
+      <section class="cert-grid">
+        <article class="card section-card">
+          <h2><span class="icon">💳</span>등록금 납부 / 분할납부</h2>
+
+          <div class="group">
+            <div class="group-title">등록금 납부</div>
+            <ul class="item-list">
+              <li>등록금 고지서 조회</li>
+              <li>등록금 납부 확인</li>
+              <li>등록 이력 조회</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">분할납부 / 연기</div>
+            <ul class="item-list">
+              <li>등록금 분할납부 신청</li>
+              <li>등록금 분할납부 신청내역</li>
+              <li>등록금 연기 신청</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card section-card">
+          <h2><span class="icon">🎓</span>장학금 / 학자금</h2>
+
+          <div class="group">
+            <div class="group-title">교내·외 장학</div>
+            <ul class="item-list">
+              <li>장학금 신청</li>
+              <li>장학금 수혜내역 조회</li>
+              <li>장학금 확인서 발급</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">국가장학 / 학자금</div>
+            <ul class="item-list">
+              <li>국가장학금 신청 안내</li>
+              <li>학자금 대출 안내</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+
+        <!-- ====== 수업·연구 섹션 ====== -->
+    <div id="study-section" style="display:none;">
+      <section class="page-header">
+        <div class="page-title">수업 · 연구 지원 서비스</div>
+        <div class="page-desc">
+          강의, 수업자료, 연구 활동과 관련된 서비스를 모아 제공합니다.
+        </div>
+      </section>
+
+      <section class="cert-grid">
+        <article class="card section-card">
+          <h2><span class="icon">📘</span>수업 관련</h2>
+
+          <div class="group">
+            <div class="group-title">강의 관리</div>
+            <ul class="item-list">
+              <li>강의시간표 조회</li>
+              <li>강의계획서 조회</li>
+              <li>수강 과목 성적 조회</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">학습 지원</div>
+            <ul class="item-list">
+              <li>HY-LMS 바로가기</li>
+              <li>과제·퀴즈 현황 확인</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card section-card">
+          <h2><span class="icon">🔬</span>연구 / 비교과</h2>
+
+          <div class="group">
+            <div class="group-title">연구 활동</div>
+            <ul class="item-list">
+              <li>연구실 안내</li>
+              <li>학부연구생 프로그램</li>
+              <li>연구과제 참여 신청</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">비교과·연구역량</div>
+            <ul class="item-list">
+              <li>연구 역량 강화 프로그램</li>
+              <li>세미나/콜로퀴움 일정</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
 
     <!-- ========== 취업·진로 섹션 ========== -->
     <!-- PART 22: job-section 컨테이너 + 제목/탭 -->
@@ -1370,6 +1477,8 @@
       const apply       = document.getElementById('apply-section');
       const cert        = document.getElementById('cert-section');
       const participate = document.getElementById('participate-section');
+      const scholar     = document.getElementById('scholar-section');
+      const study       = document.getElementById('study-section');
 
       // PART 29: 섹션 보이기/숨기기 로직
       home.style.display        = (which === 'home')        ? 'block' : 'none';
@@ -1377,6 +1486,8 @@
       apply.style.display       = (which === 'apply')       ? 'block' : 'none';
       cert.style.display        = (which === 'cert')        ? 'block' : 'none';
       participate.style.display = (which === 'participate') ? 'block' : 'none';
+      scholar.style.display     = (which === 'scholar')     ? 'block' : 'none';
+      study.style.display       = (which === 'study')       ? 'block' : 'none';
 
       // PART 30: 네비게이션 active 토글
       document.getElementById('nav-home').classList.toggle('active', which === 'home');
@@ -1385,6 +1496,8 @@
       document.getElementById('nav-cert').classList.toggle('active', which === 'cert');
       document.getElementById('nav-participate').classList.toggle('active', which === 'participate');
     }
+      document.addEventListener('DOMContentLoaded', () => {
+        showSection('home');
   </script>
 </body>
 </html>
