@@ -954,6 +954,19 @@
              class="card-link">
             <h2>나의 수강정보</h2>
             <h3>오늘의 수업</h3>
+
+            <div style="font-size:12px; margin-top:6px;">
+              <div class="meal-item">
+                <div class="meal-time">09:00 ~ 11:00 · 오픈소스개발과활용</div>
+                <div class="meal-menu">제2과학기술관 304 / 이수진 교수</div>
+              </div>
+
+              <div class="meal-item">
+                <div class="meal-time">13:00 ~ 15:00 · 일반물리학실험Ⅱ</div>
+                <div class="meal-menu">제1공학관 B105</div>
+              </div>
+            </div>
+          </a>
         </article>
       </section>
     </div>
@@ -964,7 +977,97 @@
     <!-- PART 22: job-section 컨테이너 + 제목/탭 -->
     <div id="job-section" style="display:none;">
       <section class="job-container">
-        <!-- 여기 전체를 원래 코드의 job-container 부분으로 채우기 -->
+        <div class="job-title-main">취업정보 공지사항</div>
+
+        <div class="job-tabs">
+          <div class="job-tab active">전체공지</div>
+          <div class="job-tab">학사</div>
+          <div class="job-tab">입학</div>
+          <div class="job-tab">취업</div>
+          <div class="job-tab">창업</div>
+          <div class="job-tab">모집채용</div>
+          <div class="job-tab">경조사</div>
+          <div class="job-tab">일반</div>
+          <div class="job-tab">산학연구</div>
+          <div class="job-tab">장학</div>
+          <div class="job-tab">행사안내</div>
+        </div>
+
+        <div class="job-table-wrap">
+          <table class="job-table">
+            <tr>
+              <th style="width: 90px;">구분</th>
+              <th>제목</th>
+              <th style="width: 200px;">작성자</th>
+              <th style="width: 110px;">작성일</th>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">모집채용</span></td>
+              <td>[글로벌사회혁신팀(서울)] 교내 국가근로장학생 모집 (~12/12)</td>
+              <td>글로벌사회혁신팀 / 강은혜</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">취업</span></td>
+              <td>[SK브로드밴드] 2025 Junior Talent 채용설명회 및 상담회 안내</td>
+              <td>커리어개발팀 / 송민정</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">취업</span></td>
+              <td>[국가정보원] 2026년 상반기 정기공채 채용설명회 개최 안내</td>
+              <td>커리어개발팀 / 송민정</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag H">장학</span></td>
+              <td>2026학년도 강남장학회 장학생 선발 안내</td>
+              <td>학생지원팀 / 조상현</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">창업</span></td>
+              <td>[실험실창업] 실험실 예비창업팀 모집 (~12.9 기간연장)</td>
+              <td>창업성장센터 / 백은진</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">모집채용</span></td>
+              <td>[커리어개발팀] 동계방학 교내근로장학생 모집 (~12.11 조기 마감)</td>
+              <td>커리어개발팀 / 송민정</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag S">모집채용</span></td>
+              <td>[학생생활관] 국가근로장학생 모집 (근로조정 협의 가능)</td>
+              <td>학생생활관 / 노윤희</td>
+              <td>2025.12.05</td>
+            </tr>
+
+            <tr>
+              <td><span class="job-tag E">일반</span></td>
+              <td>[AI 인재양성] 부트캠프 모집 및 교과목 수강 신청 안내 (~12/10)</td>
+              <td>미래인재양성팀 / 홍유진</td>
+              <td>2025.12.05</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="job-pagination">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>››</span>
+        </div>
       </section>
     </div>
     <!-- ========== /취업·진로 섹션 ========== -->
