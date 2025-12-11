@@ -753,12 +753,11 @@
             </a>
 
             <a class="service-item"
-               href="scholarship.html"
-               target="_blank"
-               rel="noopener noreferrer">
-              <span class="icon">💰</span>
-              <p>등록금/장학</p>
-            </a>
+     href="#"
+     onclick="showSection('scholar'); return false;">
+    <span class="icon">💰</span>
+    <p>등록금/장학</p>
+  </a>
 
 <a class="service-item"
                href="study_research.html"
