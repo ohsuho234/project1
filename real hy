@@ -849,6 +849,10 @@
           <!-- 원래 코드의 주요 기관 바로가기 quick-links HTML 붙이기 -->
           <h2>주요 기관 바로가기</h2>
           <div class="quick-links">
+           <a href="https://www.hanyang.ac.kr/web/www/home?login_post_proc=true"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span>학교 홈페이지</span>
         </article>
       </section>
 
