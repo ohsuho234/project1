@@ -35,6 +35,11 @@
       justify-content: space-between;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
+    html, body {
+  margin: 0;
+  padding: 0;
+}
     /* PART 3: .container, .grid, .grid-2, .grid-3, .card, .badge 등의 레이아웃/카드 공통 스타일 */
     .logo-area {
       display: flex;
