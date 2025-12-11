@@ -1318,6 +1318,31 @@
             </ul>
           </div>
         </article>
+
+        <!-- 발전기금·기부 -->
+        <article class="card section-card">
+          <h2><span class="icon">🐷</span>발전기금 · 기부</h2>
+
+          <div class="group">
+            <div class="group-title">기부/약정 관리</div>
+            <ul class="item-list">
+              <li>기부약정등록</li>
+              <li>약정내역</li>
+              <li>연말정산 영수증 내역</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">소식</div>
+            <ul class="item-list">
+              <li>기부뉴스</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+
+  </main>
   <!-- ================== PART 26: footer ================== -->
   <footer>
     © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
