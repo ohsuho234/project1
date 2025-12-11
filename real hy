@@ -1170,6 +1170,27 @@
             </ul>
           </article>
 
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> IT·봉사·기타</h3>
+            <ul>
+              <li>정보보안교육 이수 확인</li>
+              <li>VPN 사용신청</li>
+            </ul>
+            <div class="apply-section-label">소프트웨어</div>
+            <ul>
+              <li>Microsoft 365 신청</li>
+              <li>Microsoft 365 라이선스 변경</li>
+            </ul>
+            <div class="apply-section-label">자원봉사·응급</div>
+            <ul>
+              <li>봉사활동 신청/확인</li>
+              <li>응급실비 지원신청</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
          
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
