@@ -1121,6 +1121,23 @@
               <li>공용세미나실 예약</li>
             </ul>
           </article>
+
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 학적·성적·전공</h3>
+            <ul>
+              <li>학적변동 신청</li>
+              <li>전과/다전공 신청</li>
+              <li>복수전공 신청</li>
+              <li>부전공 신청</li>
+              <li>전공심화 신청</li>
+            </ul>
+            <div class="apply-section-label">성적 관련</div>
+            <ul>
+              <li>성적정정요청</li>
+              <li>학점인정 신청</li>
+              <li>S/U 성적전환 신청</li>
+            </ul>
+          </article>
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
