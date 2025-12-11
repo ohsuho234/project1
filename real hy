@@ -847,6 +847,8 @@
         <!-- PART 20: HOME 2행 - 주요 기관 바로가기 카드 -->
         <article class="card">
           <!-- 원래 코드의 주요 기관 바로가기 quick-links HTML 붙이기 -->
+          <h2>주요 기관 바로가기</h2>
+          <div class="quick-links">
         </article>
       </section>
 
