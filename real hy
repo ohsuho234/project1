@@ -929,12 +929,31 @@
 
         <!-- 교내 전화번호 카드 -->
         <article class="card">
-          <!-- 원래 코드의 교내 전화번호 카드 HTML 붙이기 -->
+          <a href="https://www.hanyang.ac.kr/web/www/search_phone1"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="card-link">
+            <h2>교내 전화번호</h2>
+            <div class="phone-row">
+              <span class="phone-name">학사팀</span> 031-400-1234
+            </div>
+            <div class="phone-row">
+              <span class="phone-name">장학팀</span> 031-400-5678
+            </div>
+            <div class="phone-row">
+              <span class="phone-name">IT 서비스</span> 031-400-9000
+            </div>
+          </a>
         </article>
 
         <!-- 나의 수강정보 카드 -->
         <article class="card">
-          <!-- 원래 코드의 나의 수강정보 카드 HTML 붙이기 -->
+          <a href="https://hanyangerica.everytime.kr/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="card-link">
+            <h2>나의 수강정보</h2>
+            <h3>오늘의 수업</h3>
         </article>
       </section>
     </div>
