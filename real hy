@@ -1261,6 +1261,34 @@
         </div>
       </section>
 
+     <section class="part-grid">
+        <!-- 온라인민원 -->
+        <article class="card section-card">
+          <h2><span class="icon">💬</span>온라인민원</h2>
+
+          <div class="group">
+            <div class="group-title">청탁금지법</div>
+            <ul class="item-list">
+              <li>부정청탁/수수금지금품 신고(제3자신고)</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">민원</div>
+            <ul class="item-list">
+              <li>온라인 민원 신청</li>
+              <li>민원보기</li>
+              <li>FAQ 보기</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-title">제보</div>
+            <ul class="item-list">
+              <li>한양신문고</li>
+            </ul>
+          </div>
+        </article>
   <!-- ================== PART 26: footer ================== -->
   <footer>
     © 2025 Hanyang University ERICA Portal · 본 페이지는 리디자인 예시 시안입니다.
