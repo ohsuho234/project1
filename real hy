@@ -853,6 +853,33 @@
                target="_blank"
                rel="noopener noreferrer">
               <span>학교 홈페이지</span>
+              <span class="arrow">›</span>
+            </a>
+
+            <a href="https://portal.hanyang.ac.kr/port.do#!UDMwODIwMCRAXiRAXmNvbW0vZ2pzaCRAXk0wMDYyNjMkQF7qs7Xsp4Dsgqztla0kQF5NMDAzNzgxJEBeMGJlMjk1OTM2MjY0MjlkZmMzZjFiNjE4MDQ1YmM4MTcyYjg2ODMyZGYwZDMzM2JjMGY1ZGI0NzE5OWI5MDI4YQ=="
+               target="_blank"
+               rel="noopener noreferrer">
+              <span>학사 공지사항</span>
+              <span class="arrow">›</span>
+            </a>
+
+            <a href="https://hylu-s.hanyang.ac.kr/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span>비교과 통합 관리 시스템(서울)</span>
+              <span class="arrow">›</span>
+            </a>
+            
+            <a href="https://hylu-e.hanyang.ac.kr/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span>비교과 통합 관리 시스템(ERICA)</span>
+              <span class="arrow">›</span>
+            </a>
+
+
+
+
         </article>
       </section>
 
