@@ -902,10 +902,6 @@
       <section class="grid grid-3">
         <!-- 학술정보관 좌석현황 카드 -->
         <article class="card">
-<h2>학술정보관 좌석현황<span class="badge">실시간</span></h2>
-          <div class="lab-list">
-            <div class="lab-row">
-              <span 
           <!-- 원래 코드의 좌석현황 카드 HTML 붙이기 -->
         </article>
 
