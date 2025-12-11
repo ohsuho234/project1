@@ -862,6 +862,13 @@
               <span>학사 공지사항</span>
               <span class="arrow">›</span>
             </a>
+            <a href="https://hylu-s.hanyang.ac.kr/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span>비교과 통합 관리 시스템(서울)</span>
+              <span class="arrow">›</span>
+            </a>
+
 
         </article>
       </section>
