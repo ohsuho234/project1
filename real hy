@@ -1082,11 +1082,27 @@
           온라인 상담, 생활관, 학적변동, 등록·장학, 소프트웨어 신청까지 자주 사용하는 신청 기능을 한 화면에서 확인할 수 있습니다.
         </p>
 <!-- 원래 코드의 신청 서비스 제목/설명 + apply-grid, apply-card들 붙이기 -->
-      </section>
-    </div>
+        
     <!-- ========== /신청 서비스 섹션 ========== -->
 
-
+       <div class="apply-grid">
+          <article class="apply-card">
+            <h3><span class="apply-dot"></span> 장학·학생지원</h3>
+            <ul>
+              <li>예민학생상담</li>
+              <li>개인상담 / 집단상담 신청</li>
+              <li>장학신청·조회</li>
+              <li>학업중단·휴학계 신청</li>
+              <li>My Page 바로가기</li>
+            </ul>
+            <div class="apply-section-label">상담 (지도교수/취업)</div>
+            <ul>
+              <li>지도교수 상담 신청</li>
+              <li>취업 상담 신청</li>
+            </ul>
+            <div class="apply-section-label">논문</div>
+            <ul><li>학위논문 안내</li></ul>
+          </article>
     <!-- ========== 증명·인증 섹션 ========== -->
     <!-- PART 24: cert-section 전체 -->
     <div id="cert-section" style="display:none;">
