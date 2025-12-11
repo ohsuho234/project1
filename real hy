@@ -821,7 +821,11 @@
 
         <!-- 교내 전화번호 카드 -->
         <article class="card">
-          <!-- 원래 코드의 교내 전화번호 카드 HTML 붙이기 -->
+          <a href="https://www.hanyang.ac.kr/web/www/search_phone1"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="card-link">
+            <h2>교내 전화번호</h2>
         </article>
 
         <!-- 나의 수강정보 카드 -->
